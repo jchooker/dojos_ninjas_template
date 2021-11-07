@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    width: 980px;
+    min-height: 300px;
+    margin: 20px 0 0 20px;
+    background-color: aquamarine;
+}
+
+#top-half {
+    display: flex;
+    flex-direction: row;
+}
+
+#left-half {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+#right-half {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+}
