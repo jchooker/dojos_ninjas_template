@@ -14,13 +14,13 @@ def createDojo(request):
         dojo_name=request.POST['dojo_name'], 
         dojo_city=request.POST['dojo_city'], 
         dojo_state=request.POST['dojo_state']
-        )
+    )
     return redirect('/')
 
 def createNinja(request):
     Ninja.objects.create(
         first_name=request.POST['first_name'],
         last_name=request.POST['last_name'],
-        dojo=request.POST['dojo']
+        dojo=Dojo.objects.get(id=request.POST['dojo'])
         )
     return redirect('/')

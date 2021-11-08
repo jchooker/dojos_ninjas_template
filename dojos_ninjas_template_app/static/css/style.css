@@ -11,19 +11,57 @@
     background-color: aquamarine;
 }
 
+#wrapper hr {
+    width: 90%;
+    height: 2px;
+    margin: 20px auto;
+}
+
 #top-half {
+    padding: 20px 0 0 0;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    /* border: 1px solid darkslategray; */
+}
+
+#top-half button {
+    margin-top: 15px;
 }
 
 #left-half {
     width: 450px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #right-half {
     width: 450px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
+
+.label-input {
+    width: 300px;
+    padding: 10px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#bottom-half {
+    width: 980px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropdown-width {
+    width: 200px;
+}
+
+/* .btn {
+    display: flex;
+    justify-content: flex-end;
+} */
